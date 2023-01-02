@@ -43,7 +43,14 @@
     width: 100%;
     transition: all .5s;
     height: 85px;
-    
+    font-family: "Mulish";
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 6px 5px;
+    color: var(--white, #fff);
+    /* position: relative; */
+   
 }
 
 
@@ -57,8 +64,11 @@
 .dummy-classes1{
     background-color: rgb(255, 255, 255);
     height: 70px;
+    color: black;
+     transition: color 10ms linear;
    
 }
 .dummy-classes2{
     background-color: rgb(65, 48, 160);
+    color: black;
 }
