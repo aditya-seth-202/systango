@@ -61,14 +61,10 @@
 .nav-menu{
     
 }
-.dummy-classes1{
+.add-nav-transition{
     background-color: rgb(255, 255, 255);
     height: 70px;
     color: black;
-     transition: color 10ms linear;
+     /* transition: color 10ms linear; */
    
-}
-.dummy-classes2{
-    background-color: rgb(65, 48, 160);
-    color: black;
 }
