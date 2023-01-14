@@ -1,39 +1,50 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.main-sections{
+
+.main-sections {
     /* border: 1px solid black; */
     height: 100vh;
 }
 
-#main-section-1{
-    background-color: rgb(250,139,38);
+#main-section-1 {
+    background-color: rgb(250, 139, 38);
 }
-#main-section-2{
-    background-color:rgb(162,132,245);
+
+#main-section-2 {
+    background-color: rgb(162, 132, 245);
 }
-#main-section-3{
-    background-color:rgb(7,194,142);
+
+#main-section-3 {
+    background-color: rgb(7, 194, 142);
 }
-#main-section-4{
-    background-color:rgb(96,96,235);
+
+#main-section-4 {
+    background-color: rgb(96, 96, 235);
 }
-#main-section-5{
-    background-color: rgb(250,139,38);
+
+#main-section-5 {
+    background-color: rgb(250, 139, 38);
 }
-#main-section-6{
-    background-color:rgb(7,194,142);
+
+#main-section-6 {
+    background-color: rgb(7, 194, 142);
 }
-#main-section-7{
-    background-color:rgb(162,132,245);
+
+#main-section-7 {
+    background-color: rgb(162, 132, 245);
 }
-#main-section-8{
-    background-color: rgb(250,139,38);
+
+#main-section-8 {
+    background-color: rgb(250, 139, 38);
 }
 
 
-.navbar-main{
+
+
+
+.navbar-main {
     position: fixed;
     top: 0;
     left: 0;
@@ -49,22 +60,53 @@
     line-height: 1.5;
     padding: 6px 5px;
     color: var(--white, #fff);
+    display: flex;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    padding-left: 30px;
     /* position: relative; */
-   
-}
-
-
-
-.nav-logo{
 
 }
-.nav-menu{
-    
-}
-.add-nav-transition{
+
+
+
+.nav-logo {}
+
+.nav-menu {}
+
+.add-nav-transition {
     background-color: rgb(255, 255, 255);
     height: 70px;
     color: black;
-     /* transition: color 10ms linear; */
-   
+    /* transition: color 10ms linear; */
+
+}
+
+.logo-white {
+    position: absolute;
+}
+
+.logo-color {
+    position: absolute;
+}
+
+.page-container-flex {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 62vh;
+    width: 40%;
+}
+
+.text-container {
+    min-height: 62vh;
+    width: 40%;
+
 }

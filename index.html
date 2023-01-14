@@ -1,41 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Systango</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="navbar-main" id="navbar-mainID">
-        <div class="nav-logo">ADitya</div>
+        <div class="nav-logo">
+            <img src="https://www.systango.com/img/logo.png" class="logo-white" id="logo-white" alt="systango"
+                title="systango">
+            <img src="https://www.systango.com/img/logo-color.png" class="logo-color" id="logo-color" alt="systango"
+                title="systango">
+            <!-- <img src="https://www.systango.com/img/logo-dark.png" class="logo-dark" alt="systango" title="systango"> -->
+        </div>
         <div class="nav-menu"></div>
     </header>
     <aside class="aside-section-left">
 
     </aside>
-    <div class="main-sections" id="main-section-1"></div>
-    <div class="main-sections" id="main-section-2"></div>
-    <div class="main-sections" id="main-section-3"></div>
-    <div class="main-sections" id="main-section-4"></div>
-    <div class="main-sections" id="main-section-5"></div>
-    <div class="main-sections" id="main-section-6"></div>
-    <div class="main-sections" id="main-section-7"></div>
-    <div class="main-sections" id="main-section-8"></div>
+    <div class="main-sections page-container-flex " id="main-section-1">
+        <div class="image-container"><img src="./assests/1.png" alt="" sizes="" srcset=""></div>
+        <div class="text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt eaque
+            qui, dolor alias quis autem temporibus molestiae voluptatem. Mollitia nulla provident reprehenderit,
+            perferendis laudantium corrupti quisquam quis explicabo totam.</div>
+
+    </div>
+    <div class="main-sections page-container-flex" id="main-section-2">
+        <div class="image-container"><img src="./assests/2.png" alt="" sizes="" srcset=""></div>
+        <div class="text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt eaque
+            qui, dolor alias quis autem temporibus molestiae voluptatem. Mollitia nulla provident reprehenderit,
+            perferendis laudantium corrupti quisquam quis explicabo totam.</div>
+
+    </div>
+    <div class="main-sections page-container-flex" id="main-section-3">
+        <div class="image-container"><img src="./assests/3.png" alt="" sizes="" srcset=""></div>
+        <div class="text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt eaque
+            qui, dolor alias quis autem temporibus molestiae voluptatem. Mollitia nulla provident reprehenderit,
+            perferendis laudantium corrupti quisquam quis explicabo totam.</div>
+
+    </div>
+    <div class="main-sections page-container-flex" id="main-section-4">
+         <div class="image-container"><img src="./assests/4.png" alt="" sizes="" srcset=""></div>
+        <div class="text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt eaque
+            qui, dolor alias quis autem temporibus molestiae voluptatem. Mollitia nulla provident reprehenderit,
+            perferendis laudantium corrupti quisquam quis explicabo totam.</div>
+
+    </div>
+    <div class="main-sections page-container-flex" id="main-section-5">
+         <div class="image-container"><img src="./assests/5.png" alt="" sizes="" srcset=""></div>
+        <div class="text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt eaque
+            qui, dolor alias quis autem temporibus molestiae voluptatem. Mollitia nulla provident reprehenderit,
+            perferendis laudantium corrupti quisquam quis explicabo totam.</div>
+
+    </div>
+    <div class="main-sections page-container-flex" id="main-section-6">
+         <div class="image-container"><img src="./assests/6.png" alt="" sizes="" srcset=""></div>
+        <div class="text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt eaque
+            qui, dolor alias quis autem temporibus molestiae voluptatem. Mollitia nulla provident reprehenderit,
+            perferendis laudantium corrupti quisquam quis explicabo totam.</div>
+
+    </div>
+    <div class="main-sections page-container-flex" id="main-section-7">
+         <div class="image-container"><img src="./assests/7.png" alt="" sizes="" srcset=""></div>
+        <div class="text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt eaque
+            qui, dolor alias quis autem temporibus molestiae voluptatem. Mollitia nulla provident reprehenderit,
+            perferendis laudantium corrupti quisquam quis explicabo totam.</div>
+
+    </div>
+    <div class="main-sections page-container-flex" id="main-section-8">
+         <div class="image-container"><img src="./assests/8.png" alt="" sizes="" srcset=""></div>
+        <div class="text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt eaque
+            qui, dolor alias quis autem temporibus molestiae voluptatem. Mollitia nulla provident reprehenderit,
+            perferendis laudantium corrupti quisquam quis explicabo totam.</div>
+
+    </div>
 
     <script>
-       let myRef =  document.getElementById("navbar-mainID")
-       document.addEventListener("scroll",(e)=>{
-       if (window.scrollY) {
-        myRef.classList.add("add-nav-transition")
-       }else myRef.classList.remove("add-nav-transition")
+        let navRef = document.getElementById("navbar-mainID")
+        let logoWhiteRef = document.getElementById("logo-white")
+        let logoColorRef = document.getElementById("logo-color")
+
+        document.addEventListener("scroll", (e) => {
+            if (window.scrollY) { 
+                navRef.classList.add("add-nav-transition")
+            } else navRef.classList.remove("add-nav-transition")
 
 
-       })
-    
+        })
+
     </script>
 </body>
+
 </html>
