@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,400,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -23,8 +24,44 @@
         </div>
         <div class="nav-menu"></div>
     </header>
-    <aside class="aside-section-left">
 
+    <aside class="aside-section-left">
+        <nav>
+            <ul class="aside-items">
+                <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)"><span class="aside-itemtopLine "
+                        id="jp"></span>
+                    Software Development <br>Studio
+                </li>
+                <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)">
+                    <span class="aside-itemtopLine"></span>
+                    We Have Worked <br> With The Best
+                </li>
+                <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)">
+                    <span class="aside-itemtopLine"></span>
+                    Success <br>Story
+                </li>
+                <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)">
+                    <span class="aside-itemtopLine"></span>
+                    Client <br>Testimonials
+                </li>
+                <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)">
+                    <span class="aside-itemtopLine"></span>
+                    Next-Gen <br> Technologies
+                </li>
+                <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)">
+                    <span class="aside-itemtopLine"></span>
+                    Industry <br> Experience
+                </li>
+                <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)">
+                    <span class="aside-itemtopLine"></span>
+                    All Things <br>Tech
+                </li>
+                <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)">
+                    <span class="aside-itemtopLine"></span>
+                    Get In Touch
+                </li>
+            </ul>
+        </nav>
     </aside>
     <div class="main-sections page-container-flex " id="main-section-1">
         <div class="image-container"><img src="./assests/1.png" alt="" sizes="" srcset=""></div>
@@ -48,54 +85,73 @@
 
     </div>
     <div class="main-sections page-container-flex" id="main-section-4">
-         <div class="image-container"><img src="./assests/4.png" alt="" sizes="" srcset=""></div>
+        <div class="image-container"><img src="./assests/4.png" alt="" sizes="" srcset=""></div>
         <div class="text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt eaque
             qui, dolor alias quis autem temporibus molestiae voluptatem. Mollitia nulla provident reprehenderit,
             perferendis laudantium corrupti quisquam quis explicabo totam.</div>
 
     </div>
     <div class="main-sections page-container-flex" id="main-section-5">
-         <div class="image-container"><img src="./assests/5.png" alt="" sizes="" srcset=""></div>
+        <div class="image-container"><img src="./assests/5.png" alt="" sizes="" srcset=""></div>
         <div class="text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt eaque
             qui, dolor alias quis autem temporibus molestiae voluptatem. Mollitia nulla provident reprehenderit,
             perferendis laudantium corrupti quisquam quis explicabo totam.</div>
 
     </div>
     <div class="main-sections page-container-flex" id="main-section-6">
-         <div class="image-container"><img src="./assests/6.png" alt="" sizes="" srcset=""></div>
+        <div class="image-container"><img src="./assests/6.png" alt="" sizes="" srcset=""></div>
         <div class="text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt eaque
             qui, dolor alias quis autem temporibus molestiae voluptatem. Mollitia nulla provident reprehenderit,
             perferendis laudantium corrupti quisquam quis explicabo totam.</div>
 
     </div>
     <div class="main-sections page-container-flex" id="main-section-7">
-         <div class="image-container"><img src="./assests/7.png" alt="" sizes="" srcset=""></div>
+        <div class="image-container"><img src="./assests/7.png" alt="" sizes="" srcset=""></div>
         <div class="text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt eaque
             qui, dolor alias quis autem temporibus molestiae voluptatem. Mollitia nulla provident reprehenderit,
             perferendis laudantium corrupti quisquam quis explicabo totam.</div>
 
     </div>
     <div class="main-sections page-container-flex" id="main-section-8">
-         <div class="image-container"><img src="./assests/8.png" alt="" sizes="" srcset=""></div>
+        <div class="image-container"><img src="./assests/8.png" alt="" sizes="" srcset=""></div>
         <div class="text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt eaque
             qui, dolor alias quis autem temporibus molestiae voluptatem. Mollitia nulla provident reprehenderit,
             perferendis laudantium corrupti quisquam quis explicabo totam.</div>
 
     </div>
 
-    <script>
+    <script defer>
         let navRef = document.getElementById("navbar-mainID")
         let logoWhiteRef = document.getElementById("logo-white")
         let logoColorRef = document.getElementById("logo-color")
 
         document.addEventListener("scroll", (e) => {
-            if (window.scrollY) { 
+            if (window.scrollY) {
                 navRef.classList.add("add-nav-transition")
             } else navRef.classList.remove("add-nav-transition")
 
 
         })
 
+
+
+    </script>
+    <script defer>
+        function addNavLine(event) {
+            const activeLI = document.getElementById("jp");
+            activeLI.classList.remove("aside-itemtopLine")
+            activeLI.classList.add("activeLI")
+            console.log(event.target.childNodes)
+
+
+        }
+
+        function removeNavLine(event) {
+            const activeLI = document.getElementById("jp");
+            activeLI.classList.remove("activeLI")
+            activeLI.classList.add("aside-itemtopLine")
+
+        }
     </script>
 </body>
 

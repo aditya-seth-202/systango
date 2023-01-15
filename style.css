@@ -110,3 +110,50 @@
     width: 40%;
 
 }
+
+
+.aside-section-left{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.aside-items > li{
+    margin-bottom: 30px;
+    transition: all .3s ease-in-out;
+    height: 35px!important;
+
+    font-family: 'Century Gothic','Mulish', sans-serif;
+    font-size: 11px;
+    font-weight: 100;
+
+    line-height: 16px;
+    /* visibility: hidden; */
+   
+
+}
+
+
+.activeLI{
+    width: 55px;
+    height: 3px;
+    transition: all .3s ease-in-out;
+    background-color: #2a2a2a;
+    display: block;     
+    margin-bottom: 15px;   
+}
+
+.aside-itemtopLine{
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: #fff;
+    transition: all .1s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.aside-font{
+
+}
