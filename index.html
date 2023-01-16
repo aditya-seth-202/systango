@@ -10,53 +10,62 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="navbar-main" id="navbar-mainID">
-        <div class="nav-logo">
-            <img src="https://www.systango.com/img/logo.png" class="logo-white" id="logo-white" alt="systango"
+        <div class="nav-logo ">
+            <img src="https://www.systango.com/img/logo.png" class="logo-white  " id="logo-white" alt="systango"
                 title="systango">
-            <img src="https://www.systango.com/img/logo-color.png" class="logo-color" id="logo-color" alt="systango"
-                title="systango">
+            <img src="https://www.systango.com/img/logo-color.png" class="logo-color hidden" id="logo-color"
+                alt="systango" title="systango">
             <!-- <img src="https://www.systango.com/img/logo-dark.png" class="logo-dark" alt="systango" title="systango"> -->
         </div>
-        <div class="nav-menu"></div>
+        <div class="navbar" id="navbar">
+            <li class="navbar-item">About Us</li>
+            <li class="navbar-item">What We Do</li>
+            <li class="navbar-item">Our Work</li>
+            <li class="navbar-item">Block</li>
+            <li class="navbar-item">Career</li>
+            </ul>
+            <button class=" nav-tell-btn">Talk To Us</button>
+        </div>
     </header>
 
     <aside class="aside-section-left">
         <nav>
             <ul class="aside-items">
-                <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)"><span class="aside-itemtopLine "
-                        id="jp"></span>
+                <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)" onclick="goToPage(1)">
+                    <span class="aside-itemtopLine "></span>
                     Software Development <br>Studio
                 </li>
-                <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)">
+                <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)" onclick="goToPage(2)">
                     <span class="aside-itemtopLine"></span>
                     We Have Worked <br> With The Best
                 </li>
-                <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)">
+                <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)" onclick="goToPage(3)" id="mainsection3">
                     <span class="aside-itemtopLine"></span>
                     Success <br>Story
                 </li>
-                <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)">
+                <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)" onclick="goToPage(4)">
                     <span class="aside-itemtopLine"></span>
                     Client <br>Testimonials
                 </li>
-                <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)">
+                <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)" onclick="goToPage(5)">
                     <span class="aside-itemtopLine"></span>
                     Next-Gen <br> Technologies
                 </li>
-                <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)">
+                <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)" onclick="goToPage(6)">
                     <span class="aside-itemtopLine"></span>
                     Industry <br> Experience
                 </li>
-                <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)">
+                <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)" onclick="goToPage(7)">
                     <span class="aside-itemtopLine"></span>
                     All Things <br>Tech
                 </li>
-                <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)">
+                <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)" onclick="goToPage(8)">
                     <span class="aside-itemtopLine"></span>
                     Get In Touch
                 </li>
@@ -65,16 +74,32 @@
     </aside>
     <div class="main-sections page-container-flex " id="main-section-1">
         <div class="image-container"><img src="./assests/1.png" alt="" sizes="" srcset=""></div>
-        <div class="text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt eaque
-            qui, dolor alias quis autem temporibus molestiae voluptatem. Mollitia nulla provident reprehenderit,
-            perferendis laudantium corrupti quisquam quis explicabo totam.</div>
+        <div class="text-container">
+            <h3 class="">We build</h3>
+            <h1>
+                Tomorrow’s <br>
+                <span class="typewrite" data-period="2000"
+                    data-type="[ &quot;Softwares&quot;, &quot;Mobile Apps&quot;, &quot;Web Apps&quot;, &quot;PWAs&quot;, &quot;Products&quot;, &quot;Digital Solutions&quot;, &quot;Innovations&quot;, &quot;Digital Strategies&quot;]"><span
+                        class="wrap">Software</span></span> <br>
+                Today
+            </h1>
+            <button class="sec-btn">
+                TELL ME MORE
+            </button>
+        </div>
 
     </div>
     <div class="main-sections page-container-flex" id="main-section-2">
         <div class="image-container"><img src="./assests/2.png" alt="" sizes="" srcset=""></div>
-        <div class="text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt eaque
-            qui, dolor alias quis autem temporibus molestiae voluptatem. Mollitia nulla provident reprehenderit,
-            perferendis laudantium corrupti quisquam quis explicabo totam.</div>
+        <div class="text-container">
+            <h3>Trusted By</h3>
+            <h1>The Best
+            </h1>
+            <img src="./assests/grindr-update.png" alt="" srcset="" style="    max-width: 450px">
+            <button class="sec-btn">
+                ENQUIRE NOW
+            </button>
+        </div>
 
     </div>
     <div class="main-sections page-container-flex" id="main-section-3">
@@ -124,34 +149,120 @@
         let navRef = document.getElementById("navbar-mainID")
         let logoWhiteRef = document.getElementById("logo-white")
         let logoColorRef = document.getElementById("logo-color")
+        let navbarRef = document.getElementById("navbar")
 
         document.addEventListener("scroll", (e) => {
             if (window.scrollY) {
                 navRef.classList.add("add-nav-transition")
-            } else navRef.classList.remove("add-nav-transition")
+                navbarRef.classList.add("navbar-text-transition")
+                navbarRef.classList.add("add-nav-transition")
+
+            } else {
+                navbarRef.classList.remove("navbar-text-transition")
+                navbarRef.classList.remove("add-nav-transition")
+                navRef.classList.remove("add-nav-transition")
+            }
 
 
         })
+        function goToPage(n) {
+            console.log(document.getElementById('mainsection3').offsetTop)
+            window.scrollTo({
+                top: document.getElementById('mainsection3').scrollY,
 
-
+                behavior: 'smooth'
+            })
+        }
 
     </script>
     <script defer>
         function addNavLine(event) {
-            const activeLI = document.getElementById("jp");
+            const activeLI = event.target.childNodes[1]
+
             activeLI.classList.remove("aside-itemtopLine")
             activeLI.classList.add("activeLI")
-            console.log(event.target.childNodes)
+
 
 
         }
 
         function removeNavLine(event) {
-            const activeLI = document.getElementById("jp");
+            const activeLI = event.target.childNodes[1]
             activeLI.classList.remove("activeLI")
             activeLI.classList.add("aside-itemtopLine")
 
         }
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 2) {
+                document.getElementById("logo-white").classList.add('hidden')
+                document.getElementById("logo-color").classList.remove('hidden')
+            } else {
+                document.getElementById("logo-white").classList.remove('hidden')
+                document.getElementById("logo-color").classList.add('hidden')
+            }
+        })
+
+
+        var TxtType = function (el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = "";
+            this.tick();
+            this.isDeleting = false;
+        };
+
+        TxtType.prototype.tick = function () {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+
+            var that = this;
+            var delta = 200 - Math.random() * 100;
+
+            if (this.isDeleting) {
+                delta /= 2;
+            }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === "") {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+
+            setTimeout(function () {
+                that.tick();
+            }, delta);
+        };
+
+
+        window.onload = function () {
+            var elements = document.getElementsByClassName("typewrite");
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute("data-type");
+                var period = elements[i].getAttribute("data-period");
+                if (toRotate) {
+                    new TxtType(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid white}";
+            document.body.appendChild(css);
+        };
     </script>
 </body>
 
