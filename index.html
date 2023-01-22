@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -39,35 +41,50 @@
             <ul class="aside-items">
                 <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)" onclick="goToPage(1)">
                     <span class="aside-itemtopLine "></span>
-                    Software Development <br>Studio
+                    <span>
+                        Software Development <br>Studio
+                    </span>
                 </li>
                 <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)" onclick="goToPage(2)">
                     <span class="aside-itemtopLine"></span>
-                    We Have Worked <br> With The Best
+                    <span>
+                        We Have Worked <br> With The Best
+                    </span>
                 </li>
-                <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)" onclick="goToPage(3)" id="mainsection3">
+                <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)" onclick="goToPage(3)"
+                    id="mainsection3">
                     <span class="aside-itemtopLine"></span>
-                    Success <br>Story
+                    <span>
+                        Success <br>Story
+                    </span>
                 </li>
                 <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)" onclick="goToPage(4)">
                     <span class="aside-itemtopLine"></span>
-                    Client <br>Testimonials
+                    <span>
+                        Client <br>Testimonials</span>
                 </li>
                 <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)" onclick="goToPage(5)">
                     <span class="aside-itemtopLine"></span>
-                    Next-Gen <br> Technologies
+                    <span>
+                        Next-Gen <br> Technologies</span>
                 </li>
                 <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)" onclick="goToPage(6)">
                     <span class="aside-itemtopLine"></span>
-                    Industry <br> Experience
+                    <span>
+                        Industry <br> Experience
+                    </span>
                 </li>
                 <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)" onclick="goToPage(7)">
                     <span class="aside-itemtopLine"></span>
-                    All Things <br>Tech
+                    <span>
+                        All Things <br>Tech
+                    </span>
                 </li>
                 <li onmouseover="addNavLine(event)" onmouseleave="removeNavLine(event)" onclick="goToPage(8)">
                     <span class="aside-itemtopLine"></span>
-                    Get In Touch
+                    <span>
+                        Get In Touch
+                    </span>
                 </li>
             </ul>
         </nav>
@@ -104,47 +121,180 @@
     </div>
     <div class="main-sections page-container-flex" id="main-section-3">
         <div class="image-container"><img src="./assests/3.png" alt="" sizes="" srcset=""></div>
-        <div class="text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt eaque
-            qui, dolor alias quis autem temporibus molestiae voluptatem. Mollitia nulla provident reprehenderit,
-            perferendis laudantium corrupti quisquam quis explicabo totam.</div>
+        <div class="text-container">
+            <h3>
+                Our Client
+            </h3>
+            <h1>
+                Fret Zealot .
+            </h1>
+            <p iclass="main-section-smallPara" style="color: #fff;">
+
+                " A cloud-based conferencing platform that makes joining and managing web conferences a cinch. It
+                reduces communication breakdown and sidesteps the concerns that affect time, effort &amp; money. "
+            </p>
+            <img src="./assests/group1.png" alt="" srcset="" style="margin-top: 10px">
+            <button class="sec-btn" style="margin-top: 20px">
+                LEARN MORE
+            </button>
+        </div>
 
     </div>
     <div class="main-sections page-container-flex" id="main-section-4">
         <div class="image-container"><img src="./assests/4.png" alt="" sizes="" srcset=""></div>
-        <div class="text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt eaque
-            qui, dolor alias quis autem temporibus molestiae voluptatem. Mollitia nulla provident reprehenderit,
-            perferendis laudantium corrupti quisquam quis explicabo totam.</div>
+        <div class="text-container">
+            <h3>
+                Here's Why We Do What We Do
+            </h3>
+            <h1 style="padding-bottom: 8px;">
+                Client Testimonials
+            </h1>
+            <p class="main-section-smallPara" style="padding-bottom: 16px;">
+                "
+                Internal stakeholders praised Systango's deliverables. They were able to incorporate fresh
+                functionalities in the iOS app and duplicate it on the Android platform. The company thinks highly of
+                them and mentioned that they have effortlessly joined their team — making developments easier. " </p>
+            <p class="main-section-smallPara">
+                Grant Crow
+            </p>
+            <p class="main-section-smallPara">
+                CEO, SmilePass
+            </p>
+            <button class="sec-btn">
+                WHY PEPOLE TRUST US?
+            </button>
+        </div>
 
     </div>
     <div class="main-sections page-container-flex" id="main-section-5">
         <div class="image-container"><img src="./assests/5.png" alt="" sizes="" srcset=""></div>
-        <div class="text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt eaque
-            qui, dolor alias quis autem temporibus molestiae voluptatem. Mollitia nulla provident reprehenderit,
-            perferendis laudantium corrupti quisquam quis explicabo totam.</div>
+        <div class="text-container">
+            <h3>
+                Empowering
+            </h3>
+            <h1>Digital Transformation</h1>
+            <p class="main-section-smallPara">We leverage upcoming technologies to ensure you stay future-proof in this
+                technological revolution. For us, it’s not just about the next big thing, it’s about everything that’s
+                next.</p>
+            <p class="main-section-smallPara" style="font-weight: 600;">
+                The next Innovation. The next Experience. The next Possibility.
+            </p>
+            <span style="font-size: 15px;" class="typewrite" data-period="2000"
+                data-type="[&quot;Web3 Native&quot;, &quot;AI &amp; ML&quot;, &quot;Blockchain&quot;, &quot;DevOps&quot;, &quot;Data Engineering&quot;, &quot;AR/VR&quot;, &quot;Natural Language Processing&quot;, &quot;Chatbots &quot;, &quot;RPA&quot;, &quot;QA Automation&quot;]"><span
+                    class="wrap">Blockc</span></span>
+        </div>
 
     </div>
     <div class="main-sections page-container-flex" id="main-section-6">
         <div class="image-container"><img src="./assests/6.png" alt="" sizes="" srcset=""></div>
-        <div class="text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt eaque
-            qui, dolor alias quis autem temporibus molestiae voluptatem. Mollitia nulla provident reprehenderit,
-            perferendis laudantium corrupti quisquam quis explicabo totam.</div>
+        <div class="text-container">
+            <h3>
+                Our
+            </h3>
+            <h1>
+                Industry Experience
+            </h1>
+            <p class="main-section-smallPara">
+                We’ve helped many startups and entrepreneurs across almost every industry, bring their ideas to life,
+                helping them achieve results with exceptional ROI. We’re among the go-to app development companies in
+                London.
+            </p>
+        </div>
 
     </div>
     <div class="main-sections page-container-flex" id="main-section-7">
         <div class="image-container"><img src="./assests/7.png" alt="" sizes="" srcset=""></div>
-        <div class="text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt eaque
-            qui, dolor alias quis autem temporibus molestiae voluptatem. Mollitia nulla provident reprehenderit,
-            perferendis laudantium corrupti quisquam quis explicabo totam.</div>
+        <div class="text-container">
+            <h3>
+                One-Stop Shop For
+            </h3>
+            <h1>
+                All Things Tech
+            </h1>
+            <p class="main-section-smallPara">
+                Our team of enthusiastic developers, creative designers, and strategic thinkers are obsessed with
+                bringing your ideas to life with amazing results and exceptional ROIs. We are the go-to app development
+                agency in London for start-ups, SMBs, and enterprises alike.
+            </p>
+            <button class="sec-btn">
+                DISCOVER WHAT WE DO
+            </button>
+        </div>
 
     </div>
     <div class="main-sections page-container-flex" id="main-section-8">
         <div class="image-container"><img src="./assests/8.png" alt="" sizes="" srcset=""></div>
-        <div class="text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt eaque
-            qui, dolor alias quis autem temporibus molestiae voluptatem. Mollitia nulla provident reprehenderit,
-            perferendis laudantium corrupti quisquam quis explicabo totam.</div>
+        <div class="text-container">
+            <h3>
+                Let's Discuss
+            </h3>
+            <h1>
+                Your Idea
+            </h1>
+            <div style="width: 100%;">
+                <div class="sec-form-input" >
+                    <input type="text" id="txt"> <label for="txt">Your Name</label>
+                </div>
+                <div class="sec-form-input">
+                    <input type="text" id="txt"> <label for="txt">Your Email</label>
+                </div>
+                <div class="sec-form-input">
+                    <input type="text" id="txt"> <label for="txt">Your Phone Number</label>
+                </div>
+                <div class="sec-form-input">
+                    <input type="text" id="txt"> <label for="txt">What you need help on?</label>
+                </div>
+                <div style="margin-top: 20px;">
+                    <label for="">How did you hear about us?</label>
+                    
+                    <select class="customSelect" name="i_got_to_know_about_you_through" id="id_select">
+                        <option class="selectOne" value="">- Please select one -</option>
+                        <option value="Google">Google</option>
+                        <option value="Clutch">Clutch</option>
+                        <option value="LinkedIn">LinkedIn</option>
+                        <option value="Social Media">Social Media</option>
+                        <option value="Email">Email</option>
+                        <option value="Online Articles/Magazine">Online Articles/Magazine</option>
+                        <option value="Others">Others</option>
+                      </select>
+                </div>
+                <!-- <div style="position: relative;">
+                  <label for=""> Attach your file here</label>
+                  <input type="File" accept="image/jpeg, image/jpg, image/png,.pdf,.docx,.doc,.xlsx" name="attachments[]" id="attachment1" onchange="get_select_file_type(this.value,'attachment_err','attachment1','DSF','1');">
+                </div> -->
+                <div>
+                    
+                    <input type="checkbox" name="opt_in_for_marketing" checked="">
+                </div>
+            </div>
+        </div>
 
     </div>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-top-sec1">
+                    <h5>About Us. </h5>
+                    <p class="">
+                        At Systango, we want to be your end to end IT service organization, big enough to undertake your largest project, yet small enough to maintain the loyalty and the intimacy of a boutique firm and in turn contribute greatly to your success.
+                    </p>
+            </div>
+            <div class="footer-top-sec2">
+                <div class="footer-top-sec2-cols">
+                  <h5>
+                    Services.
+                  </h5>
+                </div>
+                <div class="footer-top-sec2-cols">
+                </div>
+                <div class="footer-top-sec2-cols">
 
+                </div>
+                <div class="footer-top-sec2-cols">
+
+                </div>
+            </div>
+        </div>
+    </footer>
     <script defer>
         let navRef = document.getElementById("navbar-mainID")
         let logoWhiteRef = document.getElementById("logo-white")
@@ -166,10 +316,10 @@
 
         })
         function goToPage(n) {
-            console.log(document.getElementById('mainsection3').offsetTop)
-            window.scrollTo({
-                top: document.getElementById('mainsection3').scrollY,
+            // console.log(document.getElementById('mainsection3').offsetTop)
 
+            window.scrollTo({
+                top: window.screen.height * n,
                 behavior: 'smooth'
             })
         }
@@ -177,6 +327,7 @@
     </script>
     <script defer>
         function addNavLine(event) {
+
             const activeLI = event.target.childNodes[1]
 
             activeLI.classList.remove("aside-itemtopLine")
