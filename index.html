@@ -39,57 +39,57 @@
     <aside class="aside-section-left">
         <nav>
             <ul class="aside-items">
-                <li onmouseover="addNavLine(event)" onclick="addActiveClass(event)" onmouseleave="removeNavLine(event)"
-                    onclick="goToPage(1)">
-                    <span class="aside-itemtopLine "></span>
-                    <span>
+                <li onmouseover="addNavLine(event)" id="side-nav-item-1" onmouseleave="removeNavLine(event)"
+                    onclick="goToPage(event,1)" class="">
+                    <span class="aside-itemtopLine active"></span>
+                    <span class="well-hidden well-shown2">
                         Software Development <br>Studio
                     </span>
                 </li>
                 <li onmouseover="addNavLine(event)" id="side-nav-item-2" onmouseleave="removeNavLine(event)"
-                    onclick="goToPage(2)">
+                    onclick="goToPage(event,2)">
                     <span class="aside-itemtopLine"></span>
-                    <span>
+                    <span class="well-hidden">
                         We Have Worked <br> With The Best
                     </span>
                 </li>
                 <li onmouseover="addNavLine(event)" id="side-nav-item-3" onmouseleave="removeNavLine(event)"
-                    onclick="goToPage(3)" id="mainsection3">
+                    onclick="goToPage(event,3)">
                     <span class="aside-itemtopLine"></span>
-                    <span>
+                    <span class="well-hidden">
                         Success <br>Story
                     </span>
                 </li>
                 <li onmouseover="addNavLine(event)" id="side-nav-item-4" onmouseleave="removeNavLine(event)"
-                    onclick="goToPage(4)">
+                    onclick="goToPage(event,4)">
                     <span class="aside-itemtopLine"></span>
-                    <span>
+                    <span class="well-hidden">
                         Client <br>Testimonials</span>
                 </li>
                 <li onmouseover="addNavLine(event)" id="side-nav-item-5" onmouseleave="removeNavLine(event)"
-                    onclick="goToPage(5)">
+                    onclick="goToPage(event,5)">
                     <span class="aside-itemtopLine"></span>
-                    <span>
+                    <span class="well-hidden">
                         Next-Gen <br> Technologies</span>
                 </li>
                 <li onmouseover="addNavLine(event)" id="side-nav-item-6" onmouseleave="removeNavLine(event)"
-                    onclick="goToPage(6)">
+                    onclick="goToPage(event,6)">
                     <span class="aside-itemtopLine"></span>
-                    <span>
+                    <span class="well-hidden">
                         Industry <br> Experience
                     </span>
                 </li>
                 <li onmouseover="addNavLine(event)" id="side-nav-item-7" onmouseleave="removeNavLine(event)"
-                    onclick="goToPage(7)">
+                    onclick="goToPage(event,7)">
                     <span class="aside-itemtopLine"></span>
-                    <span>
+                    <span class="well-hidden">
                         All Things <br>Tech
                     </span>
                 </li>
                 <li onmouseover="addNavLine(event)" id="side-nav-item-8" onmouseleave="removeNavLine(event)"
-                    onclick="goToPage(8)">
+                    onclick="goToPage(event,8)">
                     <span class="aside-itemtopLine"></span>
-                    <span>
+                    <span class="well-hidden">
                         Get In Touch
                     </span>
                 </li>
@@ -459,7 +459,7 @@
         let logoWhiteRef = document.getElementById("logo-white")
         let logoColorRef = document.getElementById("logo-color")
         let navbarRef = document.getElementById("navbar")
-
+        let activeClassRef
         document.addEventListener("scroll", (e) => {
             if (window.scrollY) {
                 navRef.classList.add("add-nav-transition")
@@ -474,9 +474,14 @@
 
 
         })
-        function goToPage(n) {
+        function goToPage(event, n) {
             // console.log(document.getElementById('mainsection3').offsetTop)
-
+            $('.aside-items li').click(function () {
+                $(this).siblings().find('.active').removeClass('active');
+                $(this).siblings().find('.well-shown2').removeClass('well-shown2').addClass('well-hidden2');
+                $(this).children(":first").addClass('active')
+                $(this).children(":nth-child(2)").addClass('well-shown2')
+            });
             document.getElementById(`main-section-${n}`).scrollIntoView({
                 behavior: 'smooth'
             });
@@ -489,14 +494,21 @@
         }
         function addNavLine(event) {
             const activeLI = event.target.childNodes[1]
+            const hiddenLI = event.target.childNodes[3]
+
             activeLI.classList.remove("aside-itemtopLine")
             activeLI.classList.add("activeLI")
+            hiddenLI.classList.remove("well-hidden")
+            hiddenLI.classList.add("well-shown")
         }
 
         function removeNavLine(event) {
             const activeLI = event.target.childNodes[1]
+            const hiddenLI = event.target.childNodes[3]
             activeLI.classList.remove("activeLI")
             activeLI.classList.add("aside-itemtopLine")
+            hiddenLI.classList.add("well-hidden")
+            hiddenLI.classList.remove("well-shown")
 
         }
 

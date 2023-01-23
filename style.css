@@ -180,9 +180,9 @@
 
 .aside-items > li{
     list-style: none;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     transition: all .3s ease-in-out;
-    height: 35px!important;
+    height: 65px!important;
 
     font-family: 'Century Gothic','Mulish', sans-serif;
     font-size: 11px;
@@ -419,4 +419,28 @@ width: 20vw;
 }
 svg:hover{
     filter: sepia(1);
+}
+.well-hidden{
+    display: none ;
+    transition: all .3s;
+}
+.well-shown{
+    display: block;
+    transition: all .3s;
+}
+.well-hidden2{
+    display: none ;
+    transition: all .3s;
+}
+.well-shown2{
+    display: block;
+    transition: all .3s;
+}
+.active{
+    width: 55px;
+    height: 3px;
+    transition: all .3s ease-in-out;
+    background-color: #2a2a2a;
+    display: block;     
+    margin-bottom: 15px;   
 }
